@@ -1,4 +1,11 @@
-
+/* 
+    Copyright (C) 2021-2022 Ashley (https://github.com/iamashley0)
+   
+    This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/
+   
+   */
 function _dntEnabled(dnt, userAgent) {
    /*
    * Returns true or false based on whether doNotTack is enabled. It also takes into account the
@@ -148,7 +155,7 @@ function initiatePostHogAnalytics() {
      }),
      (e.__SV = 1));
  })(document, window.posthog || []);
-window.posthog.init("posthog token",{api_host:"https://app.posthog.com"})
+window.posthog.init("phc_XQlc4j5RDhOh3WcsllRKJO8FGluXNQOrCYWLmBmH290",{api_host:"https://app.posthog.com"})
 }
 
 
