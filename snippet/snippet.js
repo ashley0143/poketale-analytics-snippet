@@ -15,7 +15,7 @@ function _dntEnabled(dnt, userAgent) {
   let dntStatus = dnt || navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
   const ua = userAgent || navigator.userAgent;
   const anomalousWinVersions = ["Windows NT 6.1", "Windows NT 6.2", "Windows NT 6.3"];
-
+ 
   const fxMatch = ua.match(/Firefox\/(\d+)/);
   const ieRegEx = /MSIE|Trident/i;
   const isIE = ieRegEx.test(ua);
@@ -107,6 +107,7 @@ async function initiateFxAMetrics() {
 }
 
 function initiatePostHogAnalytics() {
+    const api = "phc_XQlc4j5RDhOh3WcsllRKJO8FGluXNQOrCYWLmBmH290" // put your own api key here 
   if (_dntEnabled()) {
     return;
   }
@@ -154,7 +155,7 @@ function initiatePostHogAnalytics() {
      }),
      (e.__SV = 1));
  })(document, window.posthog || []);
-window.posthog.init("phc_XQlc4j5RDhOh3WcsllRKJO8FGluXNQOrCYWLmBmH290",{api_host:"https://app.posthog.com"})
+window.posthog.init(api,{api_host:"https://app.posthog.com"})
 }
 
 
