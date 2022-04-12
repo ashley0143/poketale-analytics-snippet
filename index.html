@@ -1,40 +1,209 @@
 <head>
-  <title>POKETALE ANYLITCS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Sigmar+One&display=swap" rel="stylesheet">
-  <link href="https://user-images.githubusercontent.com/65588168/161028880-9eb9720c-fcc2-4b3c-9af5-ae8c943e8f4f.png" rel="icon">
-     <style>
-        body{background-color:#23272A} h1{color:#fff;font-family:Inter,sans-serif;} h2{color:#fff} p{color:#fff;font-family:Inter,sans-serif;} h4{color:#fff}  p{color:#fff}ohyeah{color:#fff}.jumbotron{background-color:#1f1c1c;margin:50px;padding:15px;margin-bottom:20px} li{font-family:Inter}
-    </style>  
+  <title>Poketale Anylitcs</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Sigmar+One&display=swap"
+    rel="stylesheet"
+  />
+  <link href="/media/ptlogo.svg" rel="icon" />
+  <style>
+    body{background-color:#23272a}h1{color:#fff;font-family:Inter,sans-serif}h2{color:#fff}p{color:#fff;font-family:Inter,sans-serif}h4{color:#fff}p{color:#fff}ohyeah{color:#fff}.jumbotron{background-color:#1f1c1c;margin:50px;padding:15px;margin-bottom:20px}li{font-family:Inter}body{overflow-y:hidden}
+  </style>
+  <link rel="stylesheet" href="/media/index.bb6bda39.css" />
 </head>
 <body>
-  <div align="center" style="backgorund-color:#434A50">
-    <div style="background-color:#5DA4DC">
-      
- <img src="https://user-images.githubusercontent.com/65588168/161028880-9eb9720c-fcc2-4b3c-9af5-ae8c943e8f4f.png"> 
- <h1> Poketale Anylitcs </h1>
-<p>
-Problably you are here since you saw the website making requests data.poketalebot.org.
-    </p> 
-<hr>
-          </div>
-  
+  <div align="center" style="backgorund-color:#434a50">
+    <div style="background-color:#5da4dc">
+      <img src="/media/ptlogo.svg" />
+      <h1>Poketale Anylitcs</h1>
+      <p>Privacy by Design</p>
+      <hr />
+    </div>
     <p>
-At Poketale, we do not collect or share personal information. To improve our products, we had to create a completely anonymous way to figure out how the Poketale products are being used.
+      At Poketale, we do not collect or share personal information. To improve
+      our products, we had to create a completely anonymous way to figure out
+      how the Poketale products are being used.
     </p>
     <p>
-   So we used PostHogs open-source analytics tool on Poketale, then we made a snippet that uses the "Do Not Track" feature and made it <a href="https://github.com/iamashley0/poketale-anylitcs-snippet">open source.</a> Poketale Studios only sees the following data:
-      <br>
-1. How many requests are made to the website (e.g. 420 requests today).
-     </p>
+      So we used PostHogs open-source analytics tool on Poketale, then we made a
+      snippet that uses the "Do Not Track" feature and made it<a
+        href="https://github.com/iamashley0/poketale-anylitcs-snippet"
+        >open source.</a
+      >Poketale Studios only sees the following data:<br />1. How many requests
+      are made to the website (e.g. 420 requests today).
+    </p>
     <p>
-And that's it. We don't collect any more information than the ones specified above, we promise.
+      And that's it. We don't collect any more information than the ones
+      specified above, we promise.
     </p>
-    <br><br><br><p>
-    p.s: i love you &lt;3
-    </p>
-</div>
-<script>/*! Poketale anyltics snippet (minified) | Copyright (C) 2021-2022 Ashley | https://github.com/iamashley0/poketale-anylitcs-snippet | http://mozilla.org/MPL/2.0/ */
-function t(t,n){let o=t||navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack;const e=n||navigator.userAgent;const i=["Windows NT 6.1","Windows NT 6.2","Windows NT 6.3"];const r=e.match(/Firefox\/(\d+)/);const s=/MSIE|Trident/i;const c=s.test(e);const a=e.match(/Windows.+?(?=;)/g);if(c&&typeof Array.prototype.indexOf!=="function"){return false}else if(r&&parseInt(r[1],10)<32){o="Unspecified"}else if(c&&a&&i.indexOf(a.toString())!==-1){o="Unspecified"}else{o={0:"Disabled",1:"Enabled"}[o]||"Unspecified"}return o==="Enabled"?true:false}function u(){const t=["source","campaign","content","term","medium"];const n=new URLSearchParams(window.location.search);t.forEach(t=>{if(!n.has(`utm_${t}`)){n.append(`utm_${t}`,"fpn-default")}});n.set("entrypoint","fpn-site-visit");n.set("form_type","button");return n}function p(t){window.t=t}async function n(){let t;const n=window.localStorage;const o=n.getItem("flowInfo")||null;if(o!==null&&o!=="err"){t=JSON.parse(o);const i=new Date;const r=i.getTime()-t.o;if(r<31*24*60*60*1e3){p(t);return}}try{const s=document.querySelector("meta[name='fxa']");const c=s&&s.content;if(!c){return}const a=u();const f=await fetch(`${c}metrics-flow/?${a.toString()}`,{mode:"cors"});t=await f.json();p(t);n.setItem("flowInfo",JSON.stringify(t))}catch(e){console.log(e);n.setItem("flowInfo","err")}}function o(){if(t()){return}!function(r,s){var c,a,f,u;s.i||(window.u=s,s.p=[],s.init=function(t,n,o){function e(t,n){var o=n.split(".");2==o.length&&(t=t[o[0]],n=o[1]),t[n]=function(){t.push([n].concat(Array.prototype.slice.call(arguments,0)))}}(f=r.createElement("script")).type="text/javascript",f["async"]=!0,f.src=n.l+"/static/array.js",(u=r.getElementsByTagName("script")[0]).parentNode.insertBefore(f,u);var i=s;for(void 0!==o?i=s[o]=[]:o="posthog",i.g=i.g||[],i.toString=function(t){var n="posthog";return"posthog"!==o&&(n+="."+o),t||(n+=" (stub)"),n},i.g.toString=function(){return i.toString(1)+".people (stub)"},c="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),a=0;a<c.length;a++)e(i,c[a]);s.p.push([t,n,o])},s.i=1)}(document,window.u||[]);window.u.init("phc_XQlc4j5RDhOh3WcsllRKJO8FGluXNQOrCYWLmBmH290",{l:"https://app.posthog.com"})}
-</script>
-<style>::-webkit-scrollbar{width:8.5px;background-color:#36363E}::-webkit-scrollbar-thumb{background-color:#7C7C84;border-radius:8.75px}::-webkit-scrollbar-thumb:hover{background-color:#909098}body{background-color:#23272A}p{color:#fff}h1{font-size:50px;margin:0;color:#fff}h5{display:block;font-size:0.83em;margin:1.67em 0;font-weight:700;color:#fff}a{color:#007bff;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}.page-footer-section a,.page-footer-section p{color:#B2B4BF}p{margin-top:0;margin-bottom:1rem}p{display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0;margin-inline-end:0}.mb-3,.my-3{margin-bottom:1rem!important}.h5,h5{font-size:1.3125rem}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{line-height:1.25}.h5,h5{font-size:1.25rem}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:0.5rem;font-weight:500;line-height:1.2;color#fff}.page-footer-section{position:relative;padding-top:100px;padding-bottom:20px;background-color:#F0EEF5}.page-footer-section.bg-dark .caption{color:rgba(255,255,255,.6)}.page-footer-section.bg-dark hr{border-color:#4d4853}.menu-link{position:relative;padding-left:0;list-style:none}.menu-link li{display:block;margin:10px 0}.mea:hover{color:#526bf5;text-decoration:none}.page-footer-section a,.page-footer-section p{color:#B2B4BF}.page-footer-section a:hover{color:#526bf5;text-decoration:none}.client-img > img{width:auto;max-width:100%;height:auto;max-height:100px}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.fa-icon{align-items:center;background-color:transparent;border:0;display:inline-flex;justify-content:center;margin:0;padding:0 0.1em;position:relative;user-select:none;vertical-align:text-bottom;-webkit-user-select:none}.fa-icon > *{pointer-events:none}.fa-icon.disabled,.fa-icon[disabled]{color:var(--button-disabled-ink);fill:var(--button-disabled-ink);filter: var(--button-disabled-filter);stroke:var(--button-disabled-ink);pointer-events:none}.fa-icon > .fa-icon-badge,.fa-icon.disabled > .fa-icon-badge{visibility:hidden}.fa-icon.fa-icon-badged > .fa-icon-badge{bottom:-20%;display:inline-block;font:60% sans-serif;left:calc(100% - 0.2em);position:absolute;visibility:visible}.fa-icon.fa-icon-hflipped > svg{transform:scale(-1, 1)}.fa-icon.fa-icon-vflipped > svg{transform:scale(1, -1)}.fa-icon > svg{height:1em;overflow:visible;width:1em}.fa-icon > .fa-icon_bar-chart{width:calc(1em * 2048 / 1792)}.fa-icon > .fa-icon_cloud-download,.fa-icon > .fa-icon_cloud-upload,.fa-icon > .fa-icon_cogs,.fa-icon > .fa-icon_eraser,.fa-icon > .fa-icon_film{width:calc(1em * 1920 / 1792)}.fa-icon > .fa-icon_code{width:calc(1em * 1830 / 1792)}.fa-icon > .fa-icon_exclamation-triangle{width:calc(1em * 1794 / 1792)}.fa-icon > .fa-icon_clipboard,.fa-icon > .fa-icon_comment-alt,.fa-icon > .fa-icon_external-link,.fa-icon > .fa-icon_eye-dropper,.fa-icon > .fa-icon_eye-open,.fa-icon > .fa-icon_eye-slash,.fa-icon > .fa-icon_files-o,.fa-icon > .fa-icon_list-alt{width:calc(1em * 1792 / 1792)}.fa-icon > .fa-icon_download-alt,.fa-icon > .fa-icon_font,.fa-icon > .fa-icon_search,.fa-icon > .fa-icon_spinner,.fa-icon > .fa-icon_unlink,.fa-icon > .fa-icon_upload-alt,.fa-icon > .fa-icon_zoom-in,.fa-icon > .fa-icon_zoom-out{width:calc(1em * 1664 / 1792)}.fa-icon > .fa-icon_home{width:calc(1em * 1612 / 1792)}.fa-icon > .fa-icon_check{width:calc(1em * 1550 / 1792)}.fa-icon > .fa-icon_clock-o,.fa-icon > .fa-icon_cog,.fa-icon > .fa-icon_floppy-o,.fa-icon > .fa-icon_info-circle,.fa-icon > .fa-icon_pause-circle-o,.fa-icon > .fa-icon_play-circle-o,.fa-icon > .fa-icon_power-off,.fa-icon > .fa-icon_question-circle,.fa-icon > .fa-icon_refresh,.fa-icon > .fa-icon_save,.fa-icon > .fa-icon_sliders,.fa-icon > .fa-icon_undo{width:calc(1em * 1536 / 1792)}.fa-icon > .fa-icon_arrow-right{width:calc(1em * 1472 / 1792)}.fa-icon > .fa-icon_filter{width:calc(1em * 1410 / 1792)}.fa-icon > .fa-icon_plus,.fa-icon > .fa-icon_trash-o{width:calc(1em * 1408 / 1792)}.fa-icon > .fa-icon_times{width:calc(1em * 1188 / 1792)}.fa-icon > .fa-icon_angle-up,.fa-icon > .fa-icon_double-angle-up,.fa-icon > .fa-icon_lock,.fa-icon > .fa-icon_unlock-alt{width:calc(1em * 1152 / 1792)}.fa-icon > .fa-icon_double-angle-left{width:calc(1em * 966 / 1792)}.fa-icon > .fa-icon_bolt{width:calc(1em * 896 / 1792)}body{background:#121212}nav{background:#232323;font-family:Roboto;height:60px;display:grid;grid-template-columns:20% 60% 20%}nav a{color:#fff;text-decoration:none;font-weight:700}nav a span{color:red}nav .left{display:flex;justify-content:flex-start;align-items:center}nav .left a{margin-left:30px}nav .left a i{font-size:20px;padding-right:4px}nav .middle{display:flex;justify-content:center;align-items:center}nav .middle .search-bar{background:#222;border:1px solid #444;width:420px;height:30px}nav .middle button{background:#454545;color:#999;padding:7px 25px}nav .middle input{background:#454545;color:#999;padding:2px 25px}nav .right{display:flex;justify-content:center;align-items:center;margin-left:20px;padding-left:30px}nav .right a{padding-left:30px}nav .right img{height:30px;width:30px;border-radius:50%}</style>
+    <br /><br /><br />
+    <p>p.s: i love you &lt;3</p>
+  </div>
+  <script>
+    /*
+                Copyright (C) 2021-2022 Ashley (https://github.com/iamashley0/poketale-anylitcs-snippet)
+
+                This Source Code Form is subject to the terms of the Mozilla Public
+               - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+               - You can obtain one at http://mozilla.org/MPL/2.0/
+               */
+            function _dntEnabled(dnt, userAgent) {
+               /*
+               * Returns true or false based on whether doNotTack is enabled. It also takes into account the
+               * anomalies, such as !bugzilla 887703, which effect versions of Fx 31 and lower. It also handles
+               * IE versions on Windows 7, 8 and 8.1, where the DNT implementation does not honor the spec.
+               * @see https://bugzilla.mozilla.org/show_bug.cgi?id=1217896 for more details
+               */
+              let dntStatus = dnt || navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+              const ua = userAgent || navigator.userAgent;
+              const anomalousWinVersions = ["Windows NT 6.1", "Windows NT 6.2", "Windows NT 6.3"];
+
+              const fxMatch = ua.match(/Firefox\/(\d+)/);
+              const ieRegEx = /MSIE|Trident/i;
+              const isIE = ieRegEx.test(ua);
+              const platform = ua.match(/Windows.+?(?=;)/g);
+
+              if (isIE && typeof Array.prototype.indexOf !== "function") {
+                return false;
+              } else if (fxMatch && parseInt(fxMatch[1], 10) < 32) {
+                dntStatus = "Unspecified";
+              } else if (isIE && platform && anomalousWinVersions.indexOf(platform.toString()) !== -1) {
+                dntStatus = "Unspecified";
+              } else {
+                dntStatus = { 0: "Disabled", 1: "Enabled" }[dntStatus] || "Unspecified";
+              }
+              return dntStatus === "Enabled" ? true : false;
+            }
+
+            // This function consolidates parameters
+            // for the initial ping to FxA metrics endpoint
+            // we want to send UTMs, entrypoint and formType
+            // UTMs are added as default values if they don't
+            // exist on the window
+            // see https://mozilla.github.io/ecosystem-platform/docs/relying-parties/metrics-for-relying-parties
+            function setFxAInitialParams() {
+              const utms = ["source", "campaign", "content", "term", "medium"];
+              const params = new URLSearchParams(window.location.search);
+              // fxa will keep the most recent set of params until they are replaced
+              // by flushing them here
+              utms.forEach((type) => {
+                if (!params.has(`utm_${type}`)) {
+                  params.append(`utm_${type}`, "fpn-default");
+                }
+              });
+              params.set("entrypoint", "fpn-site-visit");
+              params.set("form_type", "button");
+              return params;
+            }
+
+            // This adds flow information to the window. The click handler of the fxa
+            // subscription links will pick them up and add them to the query paramenters.
+            // This give funnel from the landing page to through the fxa lifecycle.
+            function setFxAFlowParams(data) {
+              window.fxaFlowParams = data;
+            }
+
+            // This sets up the FxA funnel for both the proxy and the VPN
+            // first we check storage to see if we've collected flow data
+            // in the last 31 days...If so, we pull it out of storate and
+            // and append params to fxa links for the vpn
+            // If we don't have these params, we go fetch them,
+            // then set them in storage and appen them to fxa links (if any)
+            // Using localstorage with a 31 day window lets the VPN fetch and use
+            // the fxa flow params using a content script
+            // here: https://github.com/mozilla/secure-proxy/blob/master/src/content/fetch-fxa-flow-params.js
+            async function initiateFxAMetrics() {
+              let flowInfo;
+              const store = window.localStorage;
+              const storedFlowInfo = store.getItem("flowInfo") || null;
+              // check if we have stored flow info in the last 31 days
+              // and just return if we have
+              if (storedFlowInfo !== null && storedFlowInfo !== "err") {
+                flowInfo = JSON.parse(storedFlowInfo);
+                const now = new Date();
+                const lastFetch = now.getTime() - flowInfo.flowBeginTime;
+                if (lastFetch < 31 * 24 * 60 * 60 * 1000) {
+                  setFxAFlowParams(flowInfo);
+                  return;
+                }
+              }
+
+              try {
+                const fxaMeta = document.querySelector("meta[name='fxa']");
+                const fxaUrl = fxaMeta && fxaMeta.content;
+                if (!fxaUrl) {
+                  return;
+                }
+                const initialFlowParams = setFxAInitialParams();
+                const res = await fetch(`${fxaUrl}metrics-flow/?${initialFlowParams.toString()}`, {
+                  mode: "cors",
+                });
+                flowInfo = await res.json();
+                setFxAFlowParams(flowInfo);
+                store.setItem("flowInfo", JSON.stringify(flowInfo));
+              } catch (err) {
+                // eslint-disable-next-line no-console
+                console.log(err);
+                store.setItem("flowInfo", "err");
+              }
+            }
+
+            function initiatePostHogAnalytics() {
+                const api = "phc_XQlc4j5RDhOh3WcsllRKJO8FGluXNQOrCYWLmBmH290" // put your own api key here
+              if (_dntEnabled()) {
+                return;
+              }
+             !(function (t, e) {
+               var o, n, p, r;
+               e.__SV ||
+                 ((window.posthog = e),
+                 (e._i = []),
+                 (e.init = function (i, s, a) {
+                   function g(t, e) {
+                     var o = e.split(".");
+                     2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                       (t[e] = function () {
+                         t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                       });
+                   }
+                   ((p = t.createElement("script")).type = "text/javascript"),
+                     (p.async = !0),
+                     (p.src = s.api_host + "/static/array.js"),
+                     (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                       p,
+                       r
+                     );
+                   var u = e;
+                   for (
+                     void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                       u.people = u.people || [],
+                       u.toString = function (t) {
+                         var e = "posthog";
+                         return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e;
+                       },
+                       u.people.toString = function () {
+                         return u.toString(1) + ".people (stub)";
+                       },
+                       o =
+                         "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(
+                           " "
+                         ),
+                       n = 0;
+                     n < o.length;
+                     n++
+                   )
+                     g(u, o[n]);
+                   e._i.push([i, s, a]);
+                 }),
+                 (e.__SV = 1));
+             })(document, window.posthog || []);
+            window.posthog.init(api,{api_host:"https://app.posthog.com"})
+            }
+  </script>
+  <script>
+    (function () {
+              document.addEventListener("DOMContentLoaded", () => {
+                 initiatePostHogAnalytics();
+               });
+            })();
+  </script>
 </body>
